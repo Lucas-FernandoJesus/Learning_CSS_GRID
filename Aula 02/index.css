@@ -3,3 +3,40 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  width:100vw;
+  height: 100vh;
+  background-color: dimgray;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  grid-template: auto auto / auto auto;
+  gap: 10px;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+}
+.grid_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+.color-green{
+  background-color: lightseagreen;
+}
+.color-blue{
+  background-color: salmon;
+}
+.color-dark{
+  background-color: white;
+}
+.color-red{
+  background-color: lightslategray;
+}
