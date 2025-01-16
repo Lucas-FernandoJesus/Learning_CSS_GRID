@@ -3,3 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  /* grid-template-rows: repeat(2,50px); */
+  grid-auto-columns: 200px;
+  grid-auto-rows: 50px;
+  background-color: brown;
+  gap: 10px;
+  grid-auto-flow: dense;
+  /* width: 600px; */
+}
+.grid_item{
+  /* grid: 1; */
+  background-color: tomato;
+}
+.item_column_2{
+  grid-column: 1/3;
+}
