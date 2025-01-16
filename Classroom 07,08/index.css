@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,200px);
+  grid-template-rows: repeat(3,50px);
+  grid-auto-columns: 200px;
+  grid-auto-rows: 50px;
+  gap: 10px;
+  background-color: brown;
+}
+.grid_item{
+  grid: 1;
+  background-color: coral;
+  grid-column: 2/4;
+  grid-row: 4;
+  grid-row: 2/4;
+}
